@@ -46,3 +46,22 @@ article {
     margin: 20px auto;
     max-width: 75%;
 }
+
+footer p a:first-child::before {
+    content: none;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    position: relative;
+}
+
+footer p a::before {
+    content: "|";
+    margin-right: 10px;
+    opacity: 0.5;
+    position: absolute;
+    left: -10px;
+}
